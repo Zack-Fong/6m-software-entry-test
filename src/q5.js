@@ -6,5 +6,5 @@
 */
 
 // Task 1: Add code here
-
+const { print } = require("./external.js")
 print();

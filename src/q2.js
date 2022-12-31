@@ -11,13 +11,17 @@
 
 
 // Task 1: Add code here
+const patientsList = [];
 
-function addPatient(patientName){
+function addPatient(patientName) {
     // Task 2: Add code here
+    patientsList.push(patientName);
 }
 
 // Task 3: Add code here
-
+function listPatient() {
+    console.log(patientsList);
+}
 
 addPatient("John");
 addPatient("Mary");

@@ -9,10 +9,27 @@
     - invoke the function "swap"
 */
 
-function swap(x, y){
+function isNumeric(variableToBeChecked) {
+    return isNaN(Number(variableToBeChecked)) ? false : true;
+}
+
+function swap(x, y) {
     // Task 1: Add code here
+    if (!isNumeric(x) || !isNumeric(y)) return -1;
+
+    x = x + y;
+
+    y = x - y;
+    x -= y;
+
+    console.log("Swapped x: ", x);
+    console.log("Swapped y: ", y);
+
+    return [x, y]
 }
 
 // Task 2: Add code here
+swap(1, 3);
+
 
 module.exports = swap;
